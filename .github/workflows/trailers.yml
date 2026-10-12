@@ -1,0 +1,35 @@
+name: trailers
+
+on:
+  schedule:
+    # Every 6 hours, at 17 minutes past the hour (GitHub runs schedules a few minutes late at times)
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch trailers
+        run: python3 fetch_trailers.py
+
+      - name: Commit trailers.json if it changed
+        run: |
+          git config user.name "trailarr-bot"
+          git config user.email "trailarr-bot@users.noreply.github.com"
+          git add trailers.json
+          if git diff --cached --quiet; then
+            echo "No change"
+          else
+            git commit -m "Update trailers"
+            git push
+          fi
