@@ -1,5 +1,13 @@
 [
  {
+  "video_id": "14j0ebfxl5Q",
+  "title": "Freeway | Original Trailer | Matthew Bright, 1996",
+  "channel": "Arrow Video",
+  "published": "2026-11-08T15:00:12+00:00",
+  "url": "https://www.youtube.com/watch?v=14j0ebfxl5Q",
+  "thumb": "https://i.ytimg.com/vi/14j0ebfxl5Q/hqdefault.jpg"
+ },
+ {
   "video_id": "PeoGhpByy3Q",
   "title": "『楽園追放 心のレゾナンス』11.13公開｜キャラクターPV【ペネム】",
   "channel": "アニプレックス チャンネル",
@@ -86,13 +94,5 @@
   "published": "2026-11-07T09:30:51+00:00",
   "url": "https://www.youtube.com/watch?v=mVK-CizFoMw",
   "thumb": "https://i.ytimg.com/vi/mVK-CizFoMw/hqdefault.jpg"
- },
- {
-  "video_id": "kOR0b4M4Krg",
-  "title": "『LunaReverse』Teaser PV",
-  "channel": "アニプレックス チャンネル",
-  "published": "2026-11-07T09:30:46+00:00",
-  "url": "https://www.youtube.com/watch?v=kOR0b4M4Krg",
-  "thumb": "https://i.ytimg.com/vi/kOR0b4M4Krg/hqdefault.jpg"
  }
 ]
